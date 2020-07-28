@@ -10,8 +10,7 @@ def get_article_talkbacks(url):
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--ignore-ssl-errors')
 
-    driver = webdriver.Chrome(
-        executable_path=r"./chromedriver.exe", options=options)
+    driver = webdriver.Chrome(executable_path=r"./chromedriver.exe", options=options)
     driver.get(url)
 
     # load comments section
